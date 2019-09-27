@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/jcarlson5/STM32CubeIDE/workspace_1.0.2/test_usb/Inc
+HeaderPath=C:/Users/jcarlson5/Git/usb_stuff/test_usb/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;usb_device.h;usbd_conf.h;usbd_desc.h;usbd_custom_hid_if.h;
-SourcePath=C:/Users/jcarlson5/STM32CubeIDE/workspace_1.0.2/test_usb/Src
+SourcePath=C:/Users/jcarlson5/Git/usb_stuff/test_usb/Src
 SourceFiles=stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;usb_device.c;usbd_conf.c;usbd_desc.c;usbd_custom_hid_if.c;
 
 [PreviousLibFiles]

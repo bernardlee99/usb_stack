@@ -24,7 +24,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "usbd_customhid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -52,6 +52,7 @@
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
+extern USBD_HandleTypeDef hUsbDeviceFS;
 
 /* USER CODE END PFP */
 
@@ -98,6 +99,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  uint8_t USB_TX_Buffer[64] =  "\1Hello, world!";
+	  USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, USB_TX_Buffer, 64);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
